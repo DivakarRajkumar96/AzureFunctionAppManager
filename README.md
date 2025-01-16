@@ -129,8 +129,8 @@ export AZURE_CLIENT_ID=your-client-id
 curl -X POST https://your-cloud-function-url \
   -H "Content-Type: application/json" \
   -d '{
-    "resourceid": "/subscriptions/955b7080-d19b-4193-b818-4aa8dafdac77/resourceGroups/functionappentest/providers/Microsoft.Web/sites/FunctionAppEnTest1",
-    "action": "enable"
+    "resourceid": "/subscriptions/<subscription_id>/resourceGroups/<resource_group_name>/providers/Microsoft.Web/sites/<function_app_name>",
+    "action": "<action>" #enable/disbale
   }'
 ```
 The response will indicate whether the function app was successfully enabled or disabled.
